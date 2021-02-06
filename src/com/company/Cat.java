@@ -13,9 +13,13 @@ public class Cat {
 
     public void eat(Plate plate){
         if (catFull == false) {
+            if (appetite > plate.getFood()) {
+                System.out.printf("В тарелке не хватает еды, чтоб котик %s насытился\n", name);
+                return;
+            }
             plate.decreaseFood(appetite);
             catFull = true;
-            System.out.printf("Котик %s покушал\n", name);
+            System.out.printf("Котик %s покушал %s еды\n", name, appetite);
         } else System.out.println("Я уже сыт!");
     }
 
