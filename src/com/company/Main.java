@@ -32,7 +32,7 @@ public class Main {
     private static void createCat(){
         cat[0] = new Cat("Масик", 3);
         cat[1] = new Cat("Жекит", 5);
-        cat[2] = new Cat("Крутит", 2);
+        cat[2] = new Cat("Крутить", 2);
         cat[3] = new Cat("Пеник", 6);
         cat[4] = new Cat("Сахарок", 4);
     }
