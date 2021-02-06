@@ -5,13 +5,12 @@ public class Main {
     private static Cat[] cat = new Cat[5];
     private static Plate plate = new Plate(30);
 
-
     public static void main(String[] args) {
 
         System.out.println();
         plate.info();
         System.out.println();
-        
+
         createCat();
         catEating();
 
